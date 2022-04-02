@@ -1,4 +1,4 @@
-*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 /* base */
 /*----------------------------------------------------------*/
 body {
@@ -164,7 +164,7 @@ a:hover {
 
 .main__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -173,6 +173,18 @@ a:hover {
     font-size: 12px;
     padding: 10px 0 40px 0;
 }
+
+@media screen and (max-width: 900px) {
+  .main__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .main__text {
+    width: 110px;
+  }
+}
+
 
 /*----------------------------------------------------------*/
 /* section */
@@ -201,4 +213,20 @@ a:hover {
 
 .sns {
     margin-right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__left {
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .footer__right {
+    font-size: 12px;
+  }
 }
